@@ -1,6 +1,7 @@
 # SEA-DATA
 Data Access Instructions for The NASCTN CBRS SEA program. 
-1. Email [nasctn@nist.gov](mailto:nasctn@nist.gov) with a data request
+1. Email [nasctn@nist.gov](mailto:nasctn@nist.gov) with a data request. Almost all requests are granted. 
+2. The data is hosted by BOX at [SEA-DATA](https://nist.box.com/s/kit1ez4gktqivx66jmnlq7b873hhg0jc), you must be invited to use this link. You will be invited when you send the above email an address. 
 
 # Data And Publications of Interest
 1. [NASCTN CBRS SEA Website](https://www.nist.gov/programs-projects/cbrs-sharing-ecosystem-assessment)
