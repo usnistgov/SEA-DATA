@@ -7516,7 +7516,8 @@ a.anchor-link {
     white-space: normal;
   }
 </style>
-<!-- End of mermaid configuration --></head>
+<!-- End of mermaid configuration -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 <section class="home home-title">
   <h1>NASCTN CBRS SEA Project Data Access</h1>
@@ -7576,8 +7577,8 @@ This tool parses data products and metadata from .sigmf files and packages them 
 </div>
 </div>
 <!-- Dropdown Menu -->
-
-<select id="sensorSelector" class="form-select">
+<div>
+<select id="sensorSelector" >
   <option>Catlina-Directional</option>
   <option>Catalina-Omni</option>
   <option>CBBT-Directional</option>
@@ -7589,9 +7590,13 @@ This tool parses data products and metadata from .sigmf files and packages them 
   <option>GMM</option>
   <option>Midway</option>
 </select>
-<input type="date" id="dateSelector" value="2024-08-02"  class="form-control"/>
+<input type="date" id="dateSelector" value="2024-08-02" />
+</div>
+<div style="text-align:center;">
 <!-- Image Tag -->
 <img id ="displayImage" src="https://data.nist.gov/od/ds/mds2-4214/Day%20Plots/Day_Activity_inspect_Catalina-Directional_doi_2024-08-02.png" />
+
+</div>
 <script>
   const sensorSelector = document.getElementById('sensorSelector');
   const dateSelector = document.getElementById('dateSelector');
