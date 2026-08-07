@@ -7575,7 +7575,39 @@ This tool parses data products and metadata from .sigmf files and packages them 
 </div>
 </div>
 </div>
+<!-- Dropdown Menu -->
+
+<select id="sensorSelector">
+  <option>Catlina-Directional</option>
+  <option>Catalina-Omni</option>
+  <option>CBBT-Directional</option>
+  <option>CBBT-Omni</option>
+  <option>HU</option>
+  <option>NIT</option>
+  <option>PtLoma-Directional</option>
+  <option>PtLoma-Omni</option>
+  <option>GMM</option>
+  <option>Midway</option>
+</select>
+<input type="date" id="dateSelector" value="2024-08-02"/>
+<!-- Image Tag -->
+<img id="displayImage" src="images/dog.jpg" alt="Selected Animal" width="300">
 <img src="https://data.nist.gov/od/ds/mds2-4214/Day%20Plots/Day_Activity_inspect_Catalina-Directional_doi_2024-08-02.png" />
+<script>
+  const sensorSelector = document.getElementById('sensorSelector');
+  const dateSelector = document.getElementById('dateSelector');
+  const displayImage = document.getElementById('displayImage');
+
+  function updateImage() {
+    const selectedSensor = sensorSelector.value;
+    const selectedDate = dateSelector.value;
+    const imageUrl = `https://data.nist.gov/od/ds/mds2-4214/Day%20Plots/Day_Activity_inspect_${selectedSensor}_doi_${selectedDate}.png`;
+    displayImage.src = imageUrl;
+  }
+
+  sensorSelector.addEventListener('change', updateImage);
+  dateSelector.addEventListener('change', updateImage);
+  <script/>
 </main>
 </body>
 </html>
