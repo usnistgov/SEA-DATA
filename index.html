@@ -7597,16 +7597,8 @@ This tool parses data products and metadata from .sigmf files and packages them 
   const dateSelector = document.getElementById('dateSelector');
   const displayImage = document.getElementById('displayImage');
 
-  displayImage.onload = () => {
-  if (sessionStorage.getItem('pendingReload') === 'true') {
-    sessionStorage.removeItem('pendingReload'); // Clear flag first
-    window.location.reload(); // Reload page
-  }
-};
-function updateImageSource(newSrc) {
-  sessionStorage.setItem('pendingReload', 'true'); // Set flag
-  displayImage.src = newSrc; // Change source
-}
+
+
 
   function updateImage() {
     const selectedSensor = sensorSelector.value;
